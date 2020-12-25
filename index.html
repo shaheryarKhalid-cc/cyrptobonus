@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Fee Bootstrap Admin Theme with Webpack and Laravel-Mix" />
+    <meta name="keywords" content="bootstrap, admin theme, admin dashboard, jquery, webpack, laravel-mix, template, responsive" />
+    <meta name="author" content="AiCloud INC" />
+
+    <title>Crypto Bonus</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="assets/css/siqtheme.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logoNav.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/logoNav.png">
+    <link rel="stylesheet" href="assets/css/pages/dashboard1.css">
+</head>
+
+<body class="theme-dark">
+<div class="grid-wrapper sidebar-bg bg1">
+
+    <!-- Theme switcher -->
+    <div id="theme-tab">
+        <div class="theme-tab-item switch-theme bg-white" data-theme="theme-default" data-toggle="tooltip" title="Light"></div>
+        <div class="theme-tab-item switch-theme bg-dark" data-theme="theme-dark" data-toggle="tooltip" title="Dark"></div>
+    </div>
+
+    <!-- BOF HEADER -->
+    <div class="header">
+        <div class="header-bar">
+            <div class="brand">
+                <a href="index.html" class="logo"><span class="text-carolina">crypto</span>-bonus</a>
+                <a href="index.html" class="logo-sm text-carolina" style="display: none;">bonus</a>
+            </div>
+            <div class="btn-toggle">
+                <!-- <a href="#" class="toggle-sidebar-btn"><i class="ti-arrow-circle-left"></i></a> -->
+                <a href="#" class="slide-sidebar-btn" style="display: none;"><i class="ti-menu"></i></a>
+            </div>
+            <div class="navigation d-flex">
+
+                <!-- BOF Header Search
+                <form class="navbar-search" role="search" method="post" action="#">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="ti-search"></i></div>
+                        </div>
+                        <input type="text" placeholder="Search for keywords" class="form-control" name="top-search"
+                               id="top-search">
+                    </div>
+                </form>-->
+                <!-- EOF Header Search -->
+
+                <!-- BOF Header Nav -->
+                <div class="navbar-menu d-flex">
+                    <div class="menu-item">
+                        <a  id="sets" class="btn right-sidebar-toggle"><i class="ti-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EOF HEADER -->
+
+    <!-- BOF ASIDE-LEFT -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <!-- sidebar-menu  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="ti-crown"></i>
+                            <span id="UserInfo" class="menu-text"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+    </div>
+    <!-- EOF ASIDE-LEFT -->
+
+    <!-- BOF MAIN -->
+    <div class="main">
+
+        <!-- BOF Breadcrumb -->
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:;"><i class="ti-calendar"></i> <h3>Crypto Bonus Data</h3></a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- EOF Breadcrumb -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="icon-left text-secondary"><i class="ti-time"></i></div>
+                        <div class="number-right text-right">
+                            <h6 class="bold text-secondary">Daily Hours Submitted</h6>
+                            <h3 class="card-title text-warning bold">6</h3>
+                        </div>
+                        <div class="progress progress-bar-sm">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress-text text-secondary">
+                            <span class="float-left"><small>Hours</small></span>
+                            <span class="float-right"><small>Hours to calculate daily bonus</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="icon-left text-secondary"><i class="ti-wallet"></i></div>
+                        <div class="number-right text-right">
+                            <h6 class="bold text-secondary">Daily Crypto Bonus Rewards</h6>
+                            <h3 class="card-title text-primary bold">2</h3>
+                        </div>
+                        <div class="progress progress-bar-sm">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress-text text-secondary">
+                            <span class="float-left"><small>Employment Coins</small></span>
+                            <span class="float-right"><small>Rewards Received</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="icon-left text-secondary"><i class="ti-wallet"></i></div>
+                        <div class="number-right text-right">
+                            <h6 class="bold text-secondary">Total Crypto Bonus Rewards</h6>
+                            <h3 class="card-title text-jade bold">32</h3>
+                        </div>
+                        <div class="progress progress-bar-sm">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-jade" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress-text text-secondary">
+                            <span class="float-left"><small>Total</small></span>
+                            <span class="float-right"><small>Coins for this account</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BOF Horizontal Form
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <form role="form">
+                        <div class="card-header uppercase">
+                            <div class="caption">
+                                <i class="ti-crown"></i> Users Crypto Profile and settings
+                            </div>
+                            <div class="tools">
+                                <a href="#" class="btn btn-outline-secondary"><i class="ti-pencil-alt"></i></a>
+                                <a href="#" class="btn btn-outline-secondary"><i class="ti-settings"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Set your EC2 Crypto wallet address. This wallet address is where your payment from the EC2 Token will be sent to.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Wallet Address </label>
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="place your ec2 wallet address here!">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col offset-md-3 pl-3">
+                                        <a href="#" class="btn btn-flat btn-primary"><i class="ti-face-smile"></i> Submit</a>
+                                        <a href="#" class="btn btn-flat btn-secondary"><i class="ti-face-sad"></i> Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </form>
+                </div>
+            </div>-->
+            <!-- EOF Horizontal Form
+            <div class="livecoinwatch-widget-1" lcw-coin="ETH" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#0693e3" lcw-color-bg="#1f2434" lcw-border-w="1" >
+            </div>-->
+
+        <!-- EOF MAIN-BODY -->
+        <!-- BOF ASIDE-RIGHT -->
+        <div id="sidebar-right">
+            <div class="sidebar-right-container">
+
+                <!-- BOF TABS -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#tab-1" data-toggle="tab" class="nav-link active">Profile</a>
+                    </li>
+                </ul>
+                <!-- EOF TABS -->
+
+                <!-- BOF TAB PANES -->
+                <div class="tab-content">
+                    <!-- BOF TAB-PANE #1 -->
+                    <div id="tab-1" class="tab-pane show active">
+                        <div class="pane-header">
+                            <h3 id="UserName"><i class="ti-user"></i> User Panel</h3>
+                            <i class="fa fa-circle text-success"></i> <span class="profile-user">Pilot-Demo</span>
+                            <span class="float-right"><af id="Logout" class="text-carolina">Log-Out</a></span>
+                        </div>
+                        <div class="pane-body">
+                            <div class="card bg-transparent mb-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <h5 class="mb-3">My Theme</h5>
+                                        <div class="btn-group mb-2">
+                                            <button type="button" class="btn switch-theme btn-light" data-theme="theme-default">Light</button>
+                                            <button type="button" class="btn switch-theme btn-dark" data-theme="theme-dark">Dark</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h5 class="mb-3">My Profile</h5>
+                                        
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Firstname:</label>
+                                                <div class="col">
+                                                    <input type="text" name="first_name" id="first_name" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            <span class="" style="color: brown; margin-left:50px; margin-top: -15px ;" id="firstnameS" ></span>
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Lastname:</label>
+                                                <div class="col">
+                                                    <input type="text" name="last_name" id="last_name" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            
+                                             <span class="" style="color: brown; margin-left:50px" id="lastnameS" ></span>
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Email:</label>
+                                                <div class="col">
+                                                    <input type="text" name="email" id="email" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            <span class="" style="color: brown; margin-left:50px" id="useremailS" ></span>
+
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">MemberID:</label>
+                                                <div class="col">
+                                                    <input type="text" disabled name="MemberID" id="MemberID" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Password:</label>
+                                                <div class="col">
+                                                    <input type="password" name="password" id="password" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            <span class="" style="color: brown; margin-left:50px" id="passwordS" ></span>
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Wallet Address:</label>
+                                                <div class="col">
+                                                    <input type="text" disabled id="wallet" name="wallet" class="form-control-plaintext"
+                                                           value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-md-4">Active Members:</label>
+                                                <div class="col">
+                                                    <select id="Employer" class="form-control selectpicker">
+                                                        <option>Select your Employer</option>
+                                                        <option>ARP Pilots Union</option>
+                                                        <option>Florida Maritime Union</option>
+                                                        <option>Montana truckers ACS</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col offset-md-4 pl-2">
+                                                <button id="Update" disabled="true" class="btn btn-sm btn-primary">Update</button>
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOF FOOTER -->
+    <!-- EOF MAIN -->
+
+    <!-- BOF FOOTER -->
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- EOF FOOTER -->
+
+</div> <!-- END WRAPPER -->
+
+<script src="assets/scripts/siqtheme.js"></script>
+<script src="assets/scripts/pages/user_session.js"></script>
+<script src="assets/scripts/pages/Update.js"></script>
+<script src="./assets/scripts/pages/tb_datatables.js"></script>
+<script src="./assets/scripts/pages/index.js"></script>
+<script src="assets/scripts/pages/dashboard1.js"></script>
+<script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+</body>
+
+</html>

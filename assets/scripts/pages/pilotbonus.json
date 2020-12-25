@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cyrptobonus-demo",
+  "private_key_id": "9f1647716ffef9f134ee6c899e645c96abc32f76",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDr2B08gYT9Bb0n\nTDT2MJdHqhYCgZTxUAXlh65XspZ5kzDhKptvlajwnWdx+U3lyKiCqO9winen5urj\n0H8Ssw2OBqNC0xCAGz0/HeozdvCmZ5z109mFz6lzuL6RzlNpjdmWkeUuP27wzZW3\nUasmxzoay7603HOnX4/N9Tlo7GJ9yGCvECFmBiynVcXLLGY45ywndTtntMffB8jI\nZPQ6uuypWmuUA86K2d2AWl2M1OaTnUM+nj1vd4TW7BF6QlcrQ8YwQCLenHMN8pf3\n9YgMVfYLw1dTcHClklq++Ja9I1XI6iHOYNc13GUaicz/c2FVQCvVDKs/ePeXCg1G\nZNQUmVvlAgMBAAECggEANlWHQsnKFCrOza9qYi+Gor2GLZSh9khL23n7Sfv8W8zz\nzWQuBDKUBb8VtnXLov0sCVIXO7PC5l02Tz7ZD7tNi6Nu2HXczs63uQNQ0gN8ZLHp\nQN9KNWBGt0DgMqI4qFBESUKabKGzkumiLOY1So1KjyLScEN7p5tF+5qb29bdyAFB\nQSOo/wwEEeh5sPkus0nMkHOedUtwbNx8ddqd7dOtyY0/VDmqm5Kso3NOcMv0O9nA\ncAI8Lz+53LIiqsSTJokKZ+JcB2GOUPB3orhtesgzjL0zkjIwvb+Ptdp1LRtqgZpb\ngklq8eE60exM5RCrGNR0KDnU5m/RhixsCclcfGgSgQKBgQD10Vgcwbc/oFXxnE1H\nCIHPzY3plAAEmnLKOCHyhFStD/7xKkY2WCQC6h7NpHbKZ/DiLERiY3tuB0OV2h31\n5oOI54kYHt6DF0SpMEEfWLRdU4qEvDHJU1FTCnSOXnENanzy/A/heOZZep6Az1yz\nP3CN5pzkMf2a2d72DjqRtwiCQQKBgQD1nQKgtCCecNEW/Ooy/k0rAcZx3ZNqmEzp\nbnFqxvIrmtT05hdO2GSeB142Uo1Y2TpzkvIceB5r+HpmkZT0y4RhLgOsTcIhZZ0C\nkn9yFTkYYsEfCR7qDvqH0i9KGsfBM17pwGd5AFAtMZJjEBfDLXrS1DclBeQC3gut\nZ/jqJHNopQKBgQCB8oIG6a0KuKLWT89WTrv482wi33dG97LZDeV8Q9JTjpIyQSvO\nzLd0xvkzss6NX3cqyUX5USfN2Y8z55NRC+Pa+rMxihgM6r8ERZsXjBgFAgXG94nG\nKQJjyLInFOvksLeO6AspIXV8NeMWqwgRReclTJUB2R98vdIs9walQ0H/QQKBgFZs\nDMSnHOMjJy9DhtSyjkyXr0/Ze0mClW19owLDRer56/zQCVuA4MaKKShMG9grd1m7\nVt2Vln6/S7JTf2ozQj0/h6NVKP2/V2PUUGu/8/sUpIdbGjmZU6X+2wzkJ21fugHd\n5Yq6BXwheTTKMNJIanNMoKqyS+yGXO2DLB6W/NTRAoGAFmHM60vCd0V4hPUT33IZ\nKz+ewgu7Y9NeZtGhzcFoVtatDpANmqUmfwhdTEUcGf6x4iBB5Ys1DfLIIyHWb0AQ\nW0WN5m2T6qcqxfQVpZCZsqGvcOx5w8eywmzIv1Kc9xyK4asWNulddTCUgi48L9a7\n7/D1J393rOXgTMvzKsfsmag=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firestorebonusadmin@cyrptobonus-demo.iam.gserviceaccount.com",
+  "client_id": "108143630415035368510",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firestorebonusadmin%40cyrptobonus-demo.iam.gserviceaccount.com"
+}
