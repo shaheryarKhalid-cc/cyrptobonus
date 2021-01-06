@@ -44,6 +44,7 @@ sButton.addEventListener("click", function()
 	}).then(function () {
 		console.log("User Signed up Successfully");
 		SendMail()
+		SendMail()
 		debugger;
 		sessionStorage.removeItem("username", null);
 		sessionStorage.removeItem("password", null);
