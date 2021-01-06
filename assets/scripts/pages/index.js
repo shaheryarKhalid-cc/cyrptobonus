@@ -21,7 +21,7 @@ debugger;
 				alert("No Such Document");
 				console.log("No such document!");
 			}else{
-				if(doc.data().Verification=="0")
+				if(doc.data().Verification!="1")
 				{
 					window.location.href = "NotVerified.html"
 				}
