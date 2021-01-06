@@ -68,13 +68,14 @@ function makeid() {
  }
 function SendMail()
 {
+	var ma=useremail.value;
 	debugger;
 	Email.send({
 		SecureToken : "f9251806-385f-48ca-bef2-75ac644f957a",
-		To : useremail.value,
+		To : ma ,
 		From : "info@ec2token.com",
 		Subject : "Crypto Bonus Verification",
-		Body : "Verify Your Mail using this link<br>http://ec2token.com/Verification.html?"+token
+		Body : "Verify Your Mail using this link <br> bonusprod.uc.r.appspot.com/Verification.html?"+token
 	}).then(
 	  message => alert(message)
 	);

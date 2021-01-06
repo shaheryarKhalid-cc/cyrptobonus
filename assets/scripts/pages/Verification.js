@@ -9,8 +9,9 @@ var firestore = firebase.firestore();
 const docRef = firestore.collection('users');
 debugger;
 var s=window.location.href;
-var j=s.replace("http://ec2token.com/Verification.html?", "");
+var j=s.replace("bonusprod.uc.r.appspot.com/Verification.html?", "");
 	var query = docRef.where("SecurityTocken", "==",j);
+	debugger;
 	query.get().then(function (querySnapshot) {
 		querySnapshot.forEach(function (doc) {
 			//document.querySelector("#useridS").text="Wrong Email or Password";
