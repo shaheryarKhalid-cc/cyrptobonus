@@ -1,8 +1,8 @@
 //load the document build the page
 var config = {
-    apiKey: "AIzaSyA7xXaE7i6nwnSylad4CHn3S_58XpqMPgI",
-    authDomain: "cyrptobonus-demo-9f0ed.firebaseapp.com",
-    projectId: "cyrptobonus-demo-9f0ed",
+	apiKey: "AIzaSyAvv46zU1dyOA62HkIUYp22dDDRKA6Y8qg",
+	authDomain: "bonusprod.firebaseapp.com",
+	projectId: "bonusprod",
 };
 firebase.initializeApp(config);
 console.log(firebase);
@@ -23,7 +23,7 @@ debugger;
 			}else{
 				if(doc.data().Verification=="0")
 				{
-					window.open("NotVerified.html");
+					window.location.href = "NotVerified.html"
 				}
 				// $("#useremailS").text("");
 				// console.log("Document data:", doc.data());

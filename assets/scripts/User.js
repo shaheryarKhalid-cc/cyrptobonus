@@ -1,8 +1,7 @@
-
 var config = {
-    apiKey: "AIzaSyA7xXaE7i6nwnSylad4CHn3S_58XpqMPgI",
-    authDomain: "cyrptobonus-demo-9f0ed.firebaseapp.com",
-    projectId: "cyrptobonus-demo-9f0ed",
+	apiKey: "AIzaSyAvv46zU1dyOA62HkIUYp22dDDRKA6Y8qg",
+	authDomain: "bonusprod.firebaseapp.com",
+	projectId: "bonusprod",
 };
 firebase.initializeApp(config);
 console.log(firebase);
@@ -72,7 +71,7 @@ function SendMail()
 	debugger;
 	Email.send({
 		SecureToken : "f9251806-385f-48ca-bef2-75ac644f957a",
-		To : ma ,
+		To : ma,
 		From : "info@ec2token.com",
 		Subject : "Crypto Bonus Verification",
 		Body : "Verify Your Mail using this link <br> bonusprod.uc.r.appspot.com/Verification.html?"+token

@@ -9,7 +9,7 @@ const Update = document.querySelector("#Update");
 Update.addEventListener("click",function(){
 	debugger;
 	var s=Validate();
-	if(s="0")
+	if(s=="0")
 	{
 		return;
 	}
@@ -38,7 +38,7 @@ Update.addEventListener("click",function(){
 });
 function Validate(){
 	debugger;
-	var s="";
+	var s="1";
 	firstnamec=firstname.value.length;
 	if(firstname.value==""||firstnamec<3)
 	{

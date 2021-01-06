@@ -1,7 +1,7 @@
 var config = {
-    apiKey: "AIzaSyA7xXaE7i6nwnSylad4CHn3S_58XpqMPgI",
-    authDomain: "cyrptobonus-demo-9f0ed.firebaseapp.com",
-    projectId: "cyrptobonus-demo-9f0ed",
+	apiKey: "AIzaSyAvv46zU1dyOA62HkIUYp22dDDRKA6Y8qg",
+	authDomain: "bonusprod.firebaseapp.com",
+	projectId: "bonusprod",
 };
 firebase.initializeApp(config);
 console.log(firebase);
@@ -9,7 +9,7 @@ var firestore = firebase.firestore();
 const docRef = firestore.collection('users');
 debugger;
 var s=window.location.href;
-var j=s.replace("bonusprod.uc.r.appspot.com/Verification.html?", "");
+var j=s.replace("http://bonusprod.uc.r.appspot.com/Verification.html?", "");
 	var query = docRef.where("SecurityTocken", "==",j);
 	debugger;
 	query.get().then(function (querySnapshot) {
